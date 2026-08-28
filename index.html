@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Por qué muchos niños se bloquean con la tarea (y qué hacen distinto las familias que dejaron de pelear cada tarde)</title>
-<meta name="description" content="La tarea en casa se vuelve una batalla en muchos hogares. Qué dice la investigación sobre atención infantil, sesiones cortas y rutinas de estudio.">
+<title>Por qué a algunos niños les cuesta tanto concentrarse al hacer la tarea</title>
+<meta name="description" content="Una maestra de primaria comparte lo que le sirvió para acompañar a su propio hijo con la tarea, y por qué decidió contarlo en un video gratuito.">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,129 +92,49 @@
     color:var(--tinta-suave);
     line-height:1.55;
   }
+  .boton{
+    display:inline-block;
+    background:var(--verde);
+    color:#fff;
+    font-family:"Karla",sans-serif;
+    font-weight:700;
+    font-size:17.5px;
+    text-decoration:none;
+    padding:17px 34px;
+    border-radius:4px;
+    text-align:center;
+    line-height:1.3;
+    margin-top:24px;
+    transition:transform .15s ease,filter .15s ease;
+  }
+  .boton:hover{filter:brightness(1.08);transform:translateY(-1px)}
+  .boton:focus-visible{outline:3px solid var(--verde-oscuro);outline-offset:3px}
+
+  .imagem-presell{
+  display:block;
+  width:100%;
+  aspect-ratio:2.2 / 1;
+  object-fit:cover;
+  object-position:center;
+  border-radius:8px;
+  margin-top:20px;
+  box-shadow:0 6px 18px rgba(22,35,46,.10);
+}
+
+  .nota-cta{
+    font-size:13px;
+    color:var(--tinta-suave);
+    margin-top:12px;
+  }
+
   .firma{
-    margin-top:22px;
+    margin-top:26px;
     padding-top:16px;
     border-top:1px solid var(--borde);
     font-size:13.5px;
     color:var(--tinta-suave);
   }
   .firma b{color:var(--tinta);font-weight:700}
-
-  .cuerpo{padding:6px 20px 10px}
-  .cuerpo p{margin-bottom:20px}
-  .cuerpo h2{
-    font-family:"Zilla Slab",Georgia,serif;
-    font-size:25px;
-    line-height:1.25;
-    font-weight:700;
-    margin:36px 0 14px;
-    letter-spacing:-0.01em;
-  }
-  .marca-texto{
-    background:linear-gradient(180deg,transparent 58%,var(--marcador) 58%,var(--marcador) 94%,transparent 94%);
-    padding:0 2px;
-  }
-  .destacado{
-    border-left:3px solid var(--verde);
-    padding:4px 0 4px 18px;
-    margin:28px 0;
-    font-family:"Zilla Slab",Georgia,serif;
-    font-size:21px;
-    line-height:1.45;
-    color:var(--verde-oscuro);
-  }
-
-  .ficha{
-    background:#fff;
-    border:1px solid var(--borde);
-    border-radius:4px;
-    padding:24px 22px;
-    margin:30px 0;
-    background-image:
-      linear-gradient(var(--cuadricula) 1px,transparent 1px),
-      linear-gradient(90deg,var(--cuadricula) 1px,transparent 1px);
-    background-size:26px 26px;
-  }
-  .ficha h3{
-    font-family:"Zilla Slab",Georgia,serif;
-    font-size:19px;
-    margin-bottom:4px;
-  }
-  .ficha .nota{font-size:14px;color:var(--tinta-suave);margin-bottom:18px}
-  .paso{display:flex;gap:14px;margin-bottom:16px;align-items:flex-start}
-  .paso:last-child{margin-bottom:0}
-  .min{
-    flex:0 0 auto;
-    font-family:"Zilla Slab",Georgia,serif;
-    font-weight:700;
-    font-size:13px;
-    color:#fff;
-    background:var(--verde);
-    border-radius:3px;
-    padding:3px 7px;
-    margin-top:3px;
-    white-space:nowrap;
-  }
-  .paso p{margin:0;font-size:16.5px;line-height:1.55}
-  .paso b{font-weight:700}
-
-  .cta-bloque{
-    background:var(--verde-oscuro);
-    color:#fff;
-    border-radius:5px;
-    padding:28px 22px;
-    margin:34px 0;
-    text-align:center;
-  }
-  .cta-bloque p{
-    color:rgba(255,255,255,.86);
-    font-size:16.5px;
-    margin-bottom:20px;
-  }
-  .cta-bloque .titulo{
-    font-family:"Zilla Slab",Georgia,serif;
-    font-size:22px;
-    line-height:1.3;
-    color:#fff;
-    font-weight:700;
-    margin-bottom:10px;
-  }
-  .boton{
-    display:block;
-    width:100%;
-    background:var(--marcador);
-    color:#3A2A05;
-    font-family:"Karla",sans-serif;
-    font-weight:700;
-    font-size:17.5px;
-    text-decoration:none;
-    padding:17px 18px;
-    border-radius:4px;
-    text-align:center;
-    line-height:1.3;
-    transition:transform .15s ease,filter .15s ease;
-  }
-  .boton:hover{filter:brightness(1.05);transform:translateY(-1px)}
-  .boton:focus-visible{outline:3px solid #fff;outline-offset:3px}
-  .cta-bloque .abajo{
-    font-size:13px;
-    color:rgba(255,255,255,.65);
-    margin:14px 0 0;
-  }
-
-  .aviso{
-    background:#fff;
-    border:1px solid var(--borde);
-    border-left:3px solid var(--lapiz);
-    border-radius:4px;
-    padding:18px 20px;
-    margin:30px 0;
-    font-size:15.5px;
-    color:var(--tinta-suave);
-    line-height:1.6;
-  }
-  .aviso b{color:var(--tinta)}
 
   footer{
     border-top:1px solid var(--borde);
@@ -235,8 +155,6 @@
     body{font-size:19px}
     h1{font-size:44px}
     .hero{padding:56px 20px 40px}
-    .cuerpo h2{font-size:29px}
-    .boton{display:inline-block;width:auto;padding:17px 40px}
   }
   @media (prefers-reduced-motion:reduce){
     *{transition:none!important;animation:none!important}
@@ -246,89 +164,24 @@
 <body>
 
 <header class="barra">
-  <div class="marca">Aprender <span>en Casa</span></div>
-  <div class="seccion">Hábitos de estudio</div>
+  <div class="marca">Profe <span>Ángela</span></div>
+  <div class="seccion">Educación infantil</div>
 </header>
 
 <section class="hero">
   <div class="col">
-    <div class="eyebrow">Educación · Rutinas escolares</div>
-    <h1>Por qué muchos niños se bloquean con la tarea, y qué hacen distinto las familias que dejaron de pelear cada tarde</h1>
-    <p class="bajada">No siempre es falta de inteligencia ni de esfuerzo. Muchas veces el problema está en cómo está armada la sesión de estudio.</p>
-    <p class="firma">Por <b>[NOMBRE DEL AUTOR]</b> · Actualizado en 2026 · Lectura de 4 minutos</p>
+    <div class="eyebrow">Educación infantil</div>
+    <h1>Descubre qué puede estar dificultando la concentración de tu hijo al estudiar</h1>
+    <p class="bajada">Una maestra de primaria explica cómo una sencilla actividad de 7 minutos puede ayudar a estimular su atención y facilitar el aprendizaje.</p>
+
+
+    <div>
+      <a class="boton" href="vsl-es.html" data-cta>VER LA PRESENTACIÓN GRATUITA</a>
+    </div>
+    <p class="nota-cta">Sin costo · No requiere registro</p>
+    <p class="firma">Por <b>Ángela Ocampo</b>, maestra de primaria</p>
   </div>
 </section>
-
-<article class="cuerpo">
-  <div class="col">
-
-    <p>La escena se repite en miles de casas cada tarde. El cuaderno abierto sobre la mesa, el lápiz en la mano y, al lado, un adulto que empieza con paciencia y termina levantando la voz. Media hora después no hay ni un ejercicio terminado, pero sí dos personas cansadas y de mal humor.</p>
-
-    <p>Lo que más desgasta a las familias no es la tarea en sí. Es la sensación de estar haciendo todo lo que se supone que hay que hacer <span class="marca-texto">y aun así ver al niño frustrarse todos los días</span>. Se contrata refuerzo escolar, se compran cuadernillos, se prueba con premios y castigos, y la tarde siguiente vuelve a empezar igual.</p>
-
-    <p>Cuando esto se vuelve rutina, suele aparecer una conclusión equivocada: que el niño no se esfuerza, o peor, que "no da". La investigación en educación apunta hacia otro lado.</p>
-
-    <h2>La atención de un niño no funciona como la de un adulto</h2>
-
-    <p>Un adulto puede sostener una tarea aburrida durante una hora porque entiende para qué sirve. Un niño de siete u ocho años no tiene ese motor todavía: su capacidad de mantener atención sostenida en algo que no eligió se mide en minutos, no en horas, y varía mucho según la edad y el momento del día.</p>
-
-    <p>Cuando la sesión de estudio dura mucho más que esa ventana, pasa algo predecible. El niño sigue sentado, pero ya no está aprendiendo: está esperando que termine. Y como el adulto ve que sigue ahí sin avanzar, insiste. Ahí se forma el círculo que agota a todos.</p>
-
-    <div class="destacado">El problema rara vez es la cantidad de estudio. Es que la sesión empieza mal, dura demasiado y termina en pelea.</div>
-
-    <h2>Tres cosas que se repiten en las tardes difíciles</h2>
-
-    <p><b>La sesión no tiene un inicio claro.</b> "Anda a hacer la tarea" es una instrucción enorme para un niño. No sabe por dónde empezar, y esa indecisión se ve desde afuera como pereza.</p>
-
-    <p><b>Se empieza por lo más difícil.</b> Es lógico para un adulto —sacarse lo pesado de encima— pero para un niño significa chocar contra un muro en el primer minuto, justo cuando todavía no entró en ritmo.</p>
-
-    <p><b>La tarea quedó asociada a una emoción negativa.</b> Después de varias semanas de gritos y llanto, el cuaderno deja de ser un cuaderno: es el objeto que anuncia que la tarde va a ser mala. Ningún método funciona mientras esa asociación siga intacta.</p>
-
-    <h2>Por qué las sesiones cortas funcionan mejor</h2>
-
-    <p>Una de las conclusiones más sólidas de la psicología del aprendizaje es que la práctica distribuida —varias sesiones cortas repartidas— retiene mejor que una sesión larga concentrada. Para los adultos es una técnica de productividad. Para un niño es, además, la diferencia entre terminar con una pequeña victoria o terminar llorando.</p>
-
-    <p>De ahí viene la idea de trabajar en bloques breves y cerrados, del orden de <span class="marca-texto">unos siete minutos</span>, con un objetivo claro y un final visible. No es un número mágico: es un bloque lo bastante corto para que el niño lo empiece sin resistencia y lo bastante largo para que algo real se complete adentro.</p>
-
-    <div class="ficha">
-      <h3>Cómo se arma un bloque corto</h3>
-      <p class="nota">Se puede probar esta tarde, sin material adicional.</p>
-      <div class="paso"><span class="min">Antes</span><p><b>Elegí una sola cosa.</b> Un ejercicio, una lista de palabras, media página. Se dice en voz alta antes de empezar, para que el niño sepa exactamente dónde termina.</p></div>
-      <div class="paso"><span class="min">0-1</span><p><b>Arrancá por lo fácil.</b> El primer minuto se usa en algo que ya domina. Entrar ganando cambia por completo la disposición para lo que viene.</p></div>
-      <div class="paso"><span class="min">1-7</span><p><b>Temporizador a la vista.</b> Que el niño vea el tiempo corriendo convierte el estudio en algo con final, no en un castigo de duración desconocida.</p></div>
-      <div class="paso"><span class="min">Fin</span><p><b>Cerrá con reconocimiento concreto.</b> No "muy bien", sino "resolviste los cuatro solo". Reconocer el proceso, no la inteligencia, sostiene mucho mejor la constancia.</p></div>
-      <div class="paso"><span class="min">Pausa</span><p><b>Tres minutos de descanso real.</b> Agua, moverse, mirar por la ventana. Después se decide si va otro bloque o se corta por hoy.</p></div>
-    </div>
-
-    <p>Al principio, dos bloques por tarde ya es un cambio importante frente a una hora de forcejeo. Lo que se recupera primero no suele ser el rendimiento: es el clima de la casa. El rendimiento viene después, cuando el niño deja de asociar el cuaderno con la pelea.</p>
-
-    <div class="cta-bloque">
-      <p class="titulo">Una maestra explica la rutina completa en video</p>
-      <p>Cómo se ordena una sesión de estudio corta en casa, qué hacer cuando el niño se resiste a empezar y cómo encadenar los bloques a lo largo de la semana. El video es gratuito.</p>
-      <a class="boton" href="[URL_DE_TU_VSL]" data-cta>Ver el video explicativo</a>
-      <p class="abajo">Se abre en esta misma ventana · No requiere registro</p>
-    </div>
-
-    <h2>Qué esperar y qué no</h2>
-
-    <p>Cambiar la estructura de la tarde ayuda con lo que depende de la rutina: empezar sin discutir, sostener la atención un rato, terminar sin llanto. Es bastante, y para muchas familias alcanza.</p>
-
-    <p>Pero no todo se resuelve con organización. Si la dificultad aparece siempre en la misma área, si el niño se queja de dolor de cabeza al leer, si evita la lectura mucho más que sus compañeros o si algo así se sostiene durante meses, lo que corresponde es una evaluación con la escuela y con un profesional. Una rutina de estudio no reemplaza ese diagnóstico ni pretende hacerlo.</p>
-
-    <div class="aviso">
-      <b>Nota:</b> este texto tiene fines informativos y educativos. No constituye asesoramiento médico, psicológico ni pedagógico individual, y no debe usarse para diagnosticar ninguna condición. Ante cualquier duda sobre el desarrollo o el aprendizaje de un niño, consultá con la escuela y con un profesional de la salud o de la educación.
-    </div>
-
-    <p>Ninguna rutina funciona igual en todas las casas, y ninguna funciona el primer día. Lo que sí suele cambiar rápido es el punto de partida: cuando la tarea deja de ser una hora indefinida y pasa a ser un bloque corto con final a la vista, el niño empieza a sentarse sin que haya que rogarle. Y ese es, casi siempre, el paso que faltaba.</p>
-
-    <div class="cta-bloque">
-      <p class="titulo">Ver cómo aplicar esto paso a paso</p>
-      <p>La explicación completa de la rutina, en video y sin costo.</p>
-      <a class="boton" href="[URL_DE_TU_VSL]" data-cta>Ver el video explicativo</a>
-    </div>
-
-  </div>
-</article>
 
 <footer>
   <div class="col">
@@ -338,23 +191,21 @@
       <a href="mailto:[EMAIL_DE_CONTACTO]">Contacto</a>
     </div>
     <div class="legal">
-      <p>© 2026 [NOMBRE DE LA EMPRESA]. Todos los derechos reservados.</p>
-      <p>Este sitio publica contenido informativo sobre hábitos de estudio y acompañamiento escolar. Los resultados dependen de cada niño, de su contexto y de la constancia con que se aplique la rutina; no se promete ningún resultado en particular.</p>
-      <p>Este sitio no está afiliado a Meta Platforms, Inc. ni a Google LLC, ni cuenta con su respaldo. Las marcas mencionadas pertenecen a sus respectivos titulares.</p>
+      <p>© 2026 [NOMBRE DE LA EMPRESA]. Todos los derechos reservados. Contenido informativo; no reemplaza una evaluación profesional.</p>
     </div>
   </div>
 </footer>
 
 <script>
-  // Mantiene los parámetros de campaña (utm_*, gclid, fbclid, etc.) al pasar a la página siguiente.
+  // Apunta el CTA a la VSL correcta según el idioma del navegador,
+  // y mantiene los parámetros de campaña (utm_*, gclid, fbclid, etc.) al pasar a la página siguiente.
   (function () {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    var destino = lang.indexOf('pt') === 0 ? 'vsl.html' : 'vsl-es.html';
     var qs = window.location.search;
-    if (!qs || qs.length < 2) return;
-    var params = qs.substring(1);
+
     document.querySelectorAll('a[data-cta]').forEach(function (a) {
-      var href = a.getAttribute('href');
-      if (!href || href.indexOf('[') === 0 || href.indexOf('#') === 0) return;
-      a.setAttribute('href', href + (href.indexOf('?') > -1 ? '&' : '?') + params);
+      a.setAttribute('href', qs && qs.length > 1 ? destino + qs : destino);
     });
   })();
 </script>

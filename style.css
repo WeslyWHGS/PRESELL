@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', Georgia, serif;
+  background-color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Elementos só revelados após o pitch da VSL (ver Delay Code no index.html) */
+.hide {
+  display: none;
+}
+
+/* ===== Headline section ===== */
+.headline-section {
+  background-color: #000000;
+  padding: 28px 20px 22px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.headline {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.highlight {
+  padding: 2px 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.highlight-red {
+  background-color: #e42313;
+  color: #ffffff;
+}
+
+.highlight-cyan {
+  background-color: #26e3e0;
+  color: #ffffff;
+}
+
+.text-red {
+  color: #ee2c1c;
+}
+
+/* ===== Video section ===== */
+.video-section {
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: #000000;
+  padding: 0 0 10px;
+}
+
+@media (min-width: 600px) {
+  .headline {
+    font-size: 26px;
+  }
+}
+
+/* ===== Offer section ===== */
+.offer-section {
+  background-color: #fdfaf3;
+  padding: 30px 0 40px;
+}
+
+.offer-inner {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 0 22px;
+  text-align: center;
+}
+
+.offer-title {
+  color: #1a3fa8;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
+}
+
+.product-stack-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.price-img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 0 auto 18px;
+  display: block;
+}
+
+.scarcity {
+  margin-bottom: 18px;
+}
+
+.scarcity-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #16232e;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 22px;
+  background: #e4e6eb;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22d3ee, #06b6d4);
+  border-radius: 11px 0 0 11px;
+}
+
+.cta-button {
+  display: block;
+  background-color: #22d3ee;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 18px rgba(34, 211, 238, 0.45);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.cta-button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.payment-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.local-currency-note {
+  font-size: 13px;
+  font-weight: 700;
+  color: #16232e;
+}
+
+/* ===== Comments section ===== */
+.comments-section {
+  background-color: #ffffff;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment {
+  display: flex;
+  gap: 8px;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment.reply .avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.comment-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.comment-bubble {
+  display: inline-block;
+  background-color: #f0f2f5;
+  border-radius: 18px;
+  padding: 8px 12px;
+  max-width: 100%;
+}
+
+.comment-name {
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  color: #050505;
+  margin-bottom: 1px;
+}
+
+.comment-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #050505;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.comment-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0 0 12px;
+  font-size: 12px;
+  color: #65676b;
+}
+
+.meta-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.meta-link:hover {
+  text-decoration: underline;
+}
+
+.meta-link.liked {
+  color: #1877f2;
+}
+
+.like-badge {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.like-badge .like-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like-badge .like-icon svg {
+  width: 8px;
+  height: 8px;
+}
+
+.replies {
+  margin-top: 10px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.badge-you {
+  display: inline-block;
+  background-color: #e7f3ff;
+  color: #1877f2;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0 5px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* ===== Add comment box ===== */
+.add-comment-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.avatar-generic {
+  background-color: #e4e6eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-comment-form {
+  flex: 1;
+  min-width: 0;
+}
+
+.name-input {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 12px;
+  color: #65676b;
+  padding: 2px 12px;
+  font-family: inherit;
+  outline: none;
+}
+
+.add-comment-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0f2f5;
+  border-radius: 18px;
+  padding: 4px 6px 4px 12px;
+}
+
+.comment-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 6px 0;
+  outline: none;
+  color: #050505;
+}
+
+.send-btn {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.send-btn.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.send-btn:hover.active {
+  background-color: #e4e6eb;
+}
+
+.privacy-note {
+  font-size: 11px;
+  color: #90949c;
+  padding: 4px 12px 0;
+}
+
+/* ===== Reply form ===== */
+.reply-form {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 0 12px;
+}
+
+.reply-form .avatar {
+  width: 28px;
+  height: 28px;
+}
